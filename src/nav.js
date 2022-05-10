@@ -6,6 +6,7 @@ fetch('nav.html')
     newelem.innerHTML = text;
     oldelem.parentNode.replaceChild(newelem,oldelem);
 
+    /* reactive listener for mobile views (hamburger tray)*/
     const btn = document.querySelector("button.mobile-menu-button");
     const menu = document.querySelector(".mobile-menu");
 
