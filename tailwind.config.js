@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./src/*.{html,js,css}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'boogaloo': ['"Boogaloo"','regular']
+      }
+    },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-textshadow')],
 }
