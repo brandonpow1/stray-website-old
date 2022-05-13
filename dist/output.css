@@ -561,11 +561,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.25rem;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -646,10 +641,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 72rem;
 }
 
-.flex-auto {
-  flex: 1 1 auto;
-}
-
 .shrink {
   flex-shrink: 1;
 }
@@ -661,12 +652,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .-rotate-2 {
   --tw-rotate: -2deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-50 {
-  --tw-scale-x: .5;
-  --tw-scale-y: .5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -686,22 +671,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-wrap: wrap;
 }
 
-.place-content-center {
-  place-content: center;
-}
-
-.place-items-center {
-  place-items: center;
-}
-
-.content-center {
-  align-content: center;
-}
-
-.content-end {
-  align-content: flex-end;
-}
-
 .items-center {
   align-items: center;
 }
@@ -714,16 +683,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.justify-items-center {
-  justify-items: center;
-}
-
-.gap-4 {
-  gap: 1rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
+.gap-3 {
+  gap: 0.75rem;
 }
 
 .space-x-7 > :not([hidden]) ~ :not([hidden]) {
@@ -742,6 +703,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .self-center {
@@ -930,11 +895,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-blue-600 {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1219,10 +1179,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1280px) {
-  .xl\:block {
-    display: block;
-  }
-
   .xl\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
