@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .alink {
+        @apply underline text-blue-600 hover:text-blue-800 visited:text-purple-600
+    }
+}
+
 @layer utilities {
     .text-shadow {
         text-shadow: 2px 2px 4px black;
