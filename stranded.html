@@ -9,13 +9,64 @@
     <link href="dist/output.css" rel="stylesheet">
     <title>Stray Project</title>
     <script defer src="https://kit.fontawesome.com/8c6c4c3a07.js" crossorigin="anonymous"></script>
+    <script src="node_modules/flowbite/dist/flowbite.js"></script>
 </head>
-<body>
+<body class="min-h-screen bg-gradient-to-b from-gray-100 to-gray-300">
     <!-- navbar script -->
     <script defer id="replace_with_navbar" src="nav.js"></script>
 
     <!-- gallery -->
-    
+    <h1 id="gallery" class="text-3xl md:text-3xl lg:text-4xl text-center font-boogaloo pb-2">Gallery</h1>
+    <div id="indicators-carousel" class="relative" data-carousel="static">
+        <!-- Carousel wrapper -->
+        <div class="flex flex-row place-content-center">
+            <button type="button" class="flex place-self-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 brightness-100 group-hover:brightness-125 transition duration-150">
+                    <img class="hover:brightness-120" src="img/arrow_left.webp">
+                </span>
+            </button>
+            <div class="overflow-hidden relative aspect-video rounded-lg h-48 sm:h-64 md:h-80 l:h-96 xl:h-[28rem] 2xl:h-[32rem]">
+                <!-- Item 1 -->
+                <div class="hidden duration-500 ease-in-out" data-carousel-item="active">
+                    <img src="img/bg/campfire.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                    <img src="img/bg/firstmeetup.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                    <img src="img/bg/aero.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                    <img src="img/bg/plane.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                    <img src="img/bg/campfirenight.webp" class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+            </div>
+            <button type="button" class="place-self-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex justify-center items-center w-8 h-8 sm:w-10 sm:h-10 brightness-100 group-hover:brightness-125 transition duration-150">
+                    <img src="img/arrow_right.webp">
+                    <span class="hidden">Next</span>
+                </span>
+            </button>
+        </div>
+        <!-- Slider indicators -->
+        <div class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+
+
+    </div>
+
     <!-- contents -->
     <div class="flex flex-row position-items-center">
         <div id="contentimgleft" class="hidden lg:block shrink w-80 h-80 rotate-2 mx-auto">
@@ -52,7 +103,7 @@
             <button href="stranded.html" class="bg-gray-500/75 hover:bg-green-500 lg:text-2xl hover:border-white mx-1 transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ring-offset-indigo-700 focus:ring-white hover:bg-indigo-700-800 rounded border border-white text-white px-4 sm:px-8 py-1 sm:py-3 text-md font-boogaloo"><i class="fa-solid fa-mobile-screen pr-2"></i>Android</button>
         </a>
     </div>
-    <p class="font-boogaloo text-center text-xl py-2"><a class="alink" href="install.html">General Installation Guide</a> | <a class="alink" href="https://thestrayproject.itch.io/stranded">Itch.io page</a></h1>
+    <p class="font-boogaloo text-center text-xl py-2">v0.1.1 | <a class="alink" href="install.html">General Installation Guide</a> | <a class="alink" href="https://thestrayproject.itch.io/stranded">Itch.io page</a></h1>
     <h1 class="font-boogaloo text-center text-xl py-2">or...</h1>
     <div class="flex justify-center items-center">
         <a href="strandedweb.html">
@@ -72,5 +123,6 @@
     </div>
     <!-- footer script -->
     <script defer id="replace_with_footer" src="footer.js"></script>
+    
 </body>
 </html>
