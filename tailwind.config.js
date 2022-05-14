@@ -7,7 +7,11 @@ module.exports = {
     extend: {
       fontFamily: {
         'boogaloo': ['"Boogaloo"','regular']
-      }
+      },
+      backgroundImage: {
+        'beach': "url('/img/bg/beach.webp');",
+        'beach1': "url('/img/bg/beach1.webp');",
+      },
     },
   },
   plugins: [

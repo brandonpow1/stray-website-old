@@ -11,13 +11,25 @@
     <script defer src="https://kit.fontawesome.com/8c6c4c3a07.js" crossorigin="anonymous"></script>
     <script src="flowbite.js"></script>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-gray-100 to-gray-300">
+<body>
     <!-- navbar script -->
     <script defer id="replace_with_navbar" src="nav.js"></script>
-
+    <!-- bg -->
+    <div class="h-full w-full fixed top-0 -z-10 bg-beach bg-cover blur-sm">
+    </div>
+    <!-- title -->
+    <img class="mx-auto justify-self-center my-4" src="img/strandedlogo.webp">
+    <!-- text -->
+        <div class="px-2 sm:px-4 md:px-16 lg:px-32 xl:px-80">
+            <p class="text-center text-lg sm:text-md md:text-lg lg:text-lg xl:text-xl font-boogaloo pb-1">You're on your way to a well-deserved vacation, saved up after months toiling away in the office. This is looking to be a great experience... until the plane you're in crashes headfirst into the ocean.</p>
+            <p class="text-center text-lg sm:text-md md:text-lg lg:text-lg xl:text-xl font-boogaloo pb-1">Miraculously you survive on an unknown island along with five other passengers who know nothing about each other, yet must work together; not only are rations and morale low, but the island harbours some dangers of its own, too...</p>
+            <p class="text-center text-lg sm:text-md md:text-lg lg:text-lg xl:text-xl font-boogaloo pb-1">
+            Your choices determine the outcome: who will survive?</p>
+        </div>
+    </div>
     <!-- gallery -->
-    <h1 id="gallery" class="text-3xl md:text-3xl lg:text-4xl text-center font-boogaloo pb-2">Gallery</h1>
-    <div id="indicators-carousel" class="relative" data-carousel="static">
+    <h1 id="gallery" class="text-3xl md:text-3xl lg:text-4xl text-center font-boogaloo pt-4 pb-2">Gallery</h1>
+    <div id="gallery-carousel" class="relative" data-carousel="static">
         <!-- Carousel wrapper -->
         <div class="flex flex-row place-content-center">
             <button type="button" class="flex place-self-center items-center px-4 h-full cursor-pointer group focus:outline-none" data-carousel-prev>
@@ -73,7 +85,7 @@
             <img src="img/smoke.webp">
         </div>
         <div id="content" class="mx-auto mt-6">
-            <h2 class="text-lg sm:text-md md:text-lg lg:text-xl xl:text-2xl font-boogaloo text-gray-500">Contents*:</h2>
+            <h2 class="text-lg sm:text-md md:text-lg lg:text-xl xl:text-2xl font-boogaloo text-red-900">Featuring*:</h2>
             <div class="pl-8">
             <ul class="list-disc">
                 <li class="pl-4 text-lg sm:text-md md:text-lg lg:text-lg xl:text-xl font-boogaloo pb-1">2 chapters (+1 prologue)</li>
@@ -114,11 +126,11 @@
     <p class="font-boogaloo text-center pt-2">* Does not work for Webkit-based browsers (Chrome**, Edge**, Safari and any iPhone web browser). Firefox is okay, though.</p>
     <p class="font-boogaloo text-center pb-2">** can be bypassed by changing user agent</p>
     <!-- faq -->
-    <div class="px-2 sm:px-2 md:px-4 lg:px-6 xl:px-10 pt-4">
+    <div class="px-2 sm:px-2 md:px-8 lg:px-16 xl:px-32 pt-4">
         <h1 class="text-3xl md:text-3xl lg:text-4xl text-center font-boogaloo pb-2">Frequently Asked Questions</h1>
-        <h2 class="text-lg sm:text-md md:text-lg lg:text-xl xl:text-2xl font-boogaloo text-gray-500">Why is this game rated 18 and above?</h2>
+        <h2 class="text-lg sm:text-md md:text-lg lg:text-xl xl:text-2xl font-boogaloo text-red-900">Why is this game rated 18 and above?</h2>
         <p class="pl-4 text-lg sm:text-md md:text-lg lg:text-lg xl:text-xl font-boogaloo pb-1">Without spoiling too much, please understand that this game contains profanity, mention of disturbing events and blood. In addition, as the script progresses, more elements will be added to the game that would be considered too strong for players under the age of 18. You have been warned!</p>
-        <h2 class="text-lg sm:text-md md:text-lg lg:text-xl xl:text-2xl font-boogaloo text-gray-500">Are you currently accepting fan translations?</h2>
+        <h2 class="text-lg sm:text-md md:text-lg lg:text-xl xl:text-2xl font-boogaloo text-red-900">Are you currently accepting fan translations?</h2>
         <p class="pl-4 text-lg sm:text-md md:text-lg lg:text-lg xl:text-xl font-boogaloo pb-1">Yes! However we ask you to first negotiate with us via <a class="alink" href="https://discord.gg/4Rp2sVzAHk">Discord</a> before starting; by merging your translation efforts into the main application, not only do we benefit from a wider reach, but you will also be informed when strings are changed, and communication will definitely help with clarifying and localizing specific dialogue blocks. (You might even show up in the credits, too!)</p>
     </div>
     <!-- footer script -->
