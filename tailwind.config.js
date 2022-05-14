@@ -9,8 +9,8 @@ module.exports = {
         'boogaloo': ['"Boogaloo"','regular']
       },
       backgroundImage: {
-        'beach': "url('/img/bg/beach.webp');",
-        'beach1': "url('/img/bg/beach1.webp');",
+        'beach': "url('img/bg/beach.webp');",
+        'beach1': "url('img/bg/beach1.webp');",
       },
     },
   },
