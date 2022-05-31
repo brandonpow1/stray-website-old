@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'boogaloo': ['"Boogaloo"','regular']
+        'boogaloo': ['"Boogaloo"', 'regular']
       },
       backgroundImage: {
         'beach': "url('img/bg/beach.webp');",
